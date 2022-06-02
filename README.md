@@ -1,3 +1,1 @@
-# CGI
-
 # Computer Graphic Imagery
