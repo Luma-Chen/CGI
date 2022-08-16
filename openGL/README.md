@@ -12,9 +12,9 @@ PyOpenGL. Coloque tudo em uma mesma pasta e abra-a no VS Code, a partir daí, co
  
  <br>
  <p> 
-    <img width= "460" height= "300" src= "globo.gif"> 
+    <img width= "300" height= "300" src= "globo.gif"> 
  </p>
  <br>
  <p> 
-    <img width= "460" height= "300" src= "paraboloid.gif"> 
+    <img width= "300" height= "300" src= "paraboloid.gif"> 
  </p>
