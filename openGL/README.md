@@ -10,4 +10,6 @@ PyOpenGL. Coloque tudo em uma mesma pasta e abra-a no VS Code, a partir daí, co
   
  Por fim, basta rodar cada código com o comando: py -u "path_do_arquivo_desejado".
  
- <img src= "dado.gif"><\img>
+ <p align= "center"> 
+    <img src= "globo.gif"> 
+  </p>
