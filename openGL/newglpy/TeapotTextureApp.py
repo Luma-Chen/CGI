@@ -8,18 +8,17 @@ import math
 a = 0
 
 class TeapotTextureApp(GLAPP):
-
     def setup(self):
         # Window setup
         self.title("Teapot With Texture")
-        self.size(1100,1100)
+        self.size(350,290)
 
         # OpenGL Initialization
         GL.glClearColor(0.2, 0.2, 0.2, 0.0)
         GL.glEnable(GL.GL_DEPTH_TEST)
         GL.glEnable(GL.GL_MULTISAMPLE)
 
-        # Pipeline (shaders)
+        # Shaders
         self.pipeline = self.loadPipeline("SimpleTexture")
         GL.glUseProgram(self.pipeline)
 
