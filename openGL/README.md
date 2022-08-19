@@ -16,8 +16,11 @@ Logo, para executar essa pasta "openGL", deve-se baixar todos os arquivos nela c
   py -m pip install PyGLM
   pip install Pillow
   py -m pip install Pillow
+  pip install numpy
+  py -m pip install numpy
 
- Por fim, basta rodar cada código com o comando: py -u "path_do_arquivo_desejado".
+ Por fim, basta rodar cada código com o comando: py -u "path_do_arquivo_desejado" 
+ ou apenas py "path_do_arquivo_desejado".
  
  <br>
  <p> 
@@ -25,5 +28,5 @@ Logo, para executar essa pasta "openGL", deve-se baixar todos os arquivos nela c
  </p>
  <br>
  <p> 
-    <img width= "360" height= "300" src= "paraboloid.gif"> 
+    <img width= "360" height= "300" src= "newglpy/TeapotTextureApp.gif"> 
  </p>
