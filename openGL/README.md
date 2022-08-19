@@ -2,7 +2,8 @@
 
 Para a execução desse projeto, utilizei o Python 3.10.6, com o pip, no Visual Studio Code e no Windows.
 
-Logo, para executar essa pasta "openGL", deve-se baixar todos os arquivos nela contidos ou clonar a pasta, de modo que incluam os arquivos necessários. Coloque tudo em uma mesma pasta e abra-a no VS Code, a partir daí, com o Python já instalado, rode os seguintes comandos no terminal com o path do projeto:
+Logo, para executar essa pasta "openGL", deve-se baixar todos os arquivos nela contidos ou clonar a pasta, de modo que incluam os arquivos necessários. Coloque tudo em uma mesma pasta e abra-a no VS Code, a partir daí, com o Python já instalado, rode os seguintes comandos no terminal com o path do projeto: 
+<br>
   pip install PyOpenGL <br>
   pip install PyOpenGL PyOpenGL_accelerate <br>
   py -m pip install -U PyOpenGL-3.1.6-cp310-cp310-win_amd64.whl <br> 
