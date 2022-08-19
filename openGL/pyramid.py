@@ -19,7 +19,6 @@ def LoadTextures():
     global texture
     texture = [ glGenTextures(1) ]
 
-    ################################################################################
     glBindTexture(GL_TEXTURE_2D, texture[0])
     reader = png.Reader(filename='texture.png')
     w, h, pixels, metadata = reader.read_flat()
@@ -47,7 +46,7 @@ def InitGL(Width, Height):
     glEnable(GL_DEPTH_TEST)            
     glShadeModel(GL_SMOOTH)            
     glMatrixMode(GL_PROJECTION)
-    gluPerspective(45.0, float(Width)/float(Height), 0.5, 100.0)
+    gluPerspective(45.0, float(Width)/float(Height), 0.1, 100.0)
     glMatrixMode(GL_MODELVIEW)
 
 def ReSizeGLScene(Width, Height):
@@ -56,7 +55,7 @@ def ReSizeGLScene(Width, Height):
     glViewport(0, 0, Width, Height)      
     glMatrixMode(GL_PROJECTION)
     glLoadIdentity()
-    gluPerspective(45.0, float(Width)/float(Height), 0.5, 100.0)
+    gluPerspective(45.0, float(Width)/float(Height), 0.1, 100.0)
     glMatrixMode(GL_MODELVIEW)
 
 
@@ -116,6 +115,10 @@ def keyPressed(tecla, x, y):
         dy = 0
         dz = 1.0
 
+def timer(i):
+    glutPostRedisplay()
+    glutTimerFunc(15, timer, 1)
+
 def teclaEspecialPressionada(tecla, x, y):
     global xrot, yrot, zrot, dx, dy, dz
     if tecla == GLUT_KEY_LEFT:
@@ -144,6 +147,7 @@ def main():
     glutReshapeFunc(ReSizeGLScene)
     glutKeyboardFunc(keyPressed)
     glutSpecialFunc(teclaEspecialPressionada)
+    glutTimerFunc(1, timer, 1000)
     InitGL(640, 480)
     glutMainLoop()
 
