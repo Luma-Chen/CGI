@@ -28,5 +28,5 @@ Logo, para executar essa pasta "openGL", deve-se baixar todos os arquivos nela c
  </p>
  <br>
  <p> 
-    <img width= "360" height= "300" src= "newglpy/TeapotTextureApp.gif"> 
+    <img width= "360" height= "300" src= "newglpy/teapot.gif"> 
  </p>
